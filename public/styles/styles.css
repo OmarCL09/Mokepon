@@ -1,0 +1,195 @@
+/*----Imports----*/
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:wght@200&family=Ubuntu:wght@500&family=Work+Sans:wght@300&display=swap');
+/*---------------*/
+body{
+    width: 100vw;
+    overflow:hidden;
+    background: linear-gradient(220.55deg, #8A88FB 0%, #D079EE 100%);
+    font-family: sans-serif;
+}
+#seleccionar-mascota {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.titulo {
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: bold;
+  color: white;
+  font-size: 2.5em;
+}
+
+.subtitulo {
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5em;
+  color: white;
+}
+
+.tarjetas, .tarjetas-ataques {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.tarjeta-de-mokepon {
+  height: 12vh;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  background-color: #8A88FB;
+  margin: 0% 1%;
+  transition: .2s;
+}
+
+.tarjeta-de-mokepon p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  color: white;
+}
+
+.tarjeta-de-mokepon img {
+  width: 10vh;
+}
+
+.tarjeta-de-mokepon:hover{
+  box-shadow: 0px 0px 14px -1px rgb(255 255 255 / 45%);
+  cursor: pointer;
+}
+#boton-mascota {
+  height: 5vh;
+  width: 10%;
+  margin: 5% auto 0 auto;
+  font-size: 1.5em;
+  background-color: #7573ff;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: .2s;
+}
+#boton-mascota:hover{
+  color: white;
+  cursor: pointer;
+  background-color: #f34a73;
+  border-radius: 10px;
+  transform: scale(1.1);
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  box-shadow: 0px 0px 14px -1px rgb(255 255 255 / 45%);
+}
+
+button img{
+  height: 1.7vh;
+}
+
+#seleccionar-ataque {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.boton-de-ataque {
+  height: 4vh;
+  width: 3%;
+  background-color: #7573ff;
+  border-radius: 15px 5%;
+  border: none;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: 'Poppins', sans-serif;
+  transition: .2s;
+}
+
+#mensajes {
+  width: 280px;
+  background: #EEEEEE;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#boton-reiniciar {
+  border: none;
+  color: #11468F;
+  font-family: 'Poppins', sans-serif;
+}
+
+.ataques {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  color: white;
+}
+
+#boton-tierra:hover {
+  border-radius: 15px;
+  box-shadow: 0px 0px 14px -1px #2fa627;
+  cursor: pointer;
+  background-color: #2fa627;
+}
+
+#boton-agua:hover {
+  border-radius: 15px;
+  background-color: #2784ff;
+  box-shadow: 0px 0px 14px -1px rgb(9 243 231 / 55%);
+  cursor: pointer;
+}
+
+#boton-fuego:hover {
+  border-radius: 15px;
+  background-color: red;
+  box-shadow: 0px 0px 14px -1px rgb(243 9 9 / 55%);
+  cursor: pointer;
+}
+
+#vidas-jugador, #vidas-enemigo {
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+.ataques-jugador, .ataques-enemigo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ver-mapa {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#ver-mapa button {
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin: 10px 0;
+}

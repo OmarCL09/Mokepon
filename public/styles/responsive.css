@@ -1,0 +1,51 @@
+@media (max-width: 950px) {
+    .boton-de-ataque{
+        width: 8%;
+    }
+}
+
+@media (max-width: 800px) {
+    .tarjetas{
+        flex-direction: column;
+        gap: 25px;
+    }
+    .tarjeta-de-mokepon, #boton-mascota {
+        width: 65%;
+    }
+}
+
+
+@media (max-width: 560px) {
+    .tarjetas, .tarjetas-ataques {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .boton-de-ataque{
+        width: 30%;
+    }
+    #seleccionar-ataque{
+        height: 110vh;
+    }
+    .ataques{
+        height: 40vh;
+        overflow:scroll;
+    }
+    #ver-mapa div {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 5px;
+    }
+    #ataques-del-enemigo p:nth-child(5){
+        padding-bottom: 70%;
+    }
+}
+
+@media (max-width: 360px) {
+    .titulo{
+        font-size: 1em;
+    }
+    .subtitulo{
+        font-size: 0.8em;
+    }
+}
